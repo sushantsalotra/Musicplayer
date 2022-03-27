@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    background:antiquewhite;
+}
+
+.about{
+    color:dimgray;
+    cursor:pointer;
+}
+
+.about:hover{
+    color:white;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    font-family:ubuntu;
+    background-color:rgb(12, 9, 9);
+    right:0;
+    top:0;
+    left:0;
+    position:fixed;
+
+}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    list-style-type:none;
+    height:55px;
+    color:white;
+}
+
+nav ul li{
+    padding:0 12px;
+}
+
+.home{
+    padding-left: 70px;
+    color:dimgray;
+}
+
+.home:hover{
+    color:white;
+}
+
+p1{
+    color:white;
+}
+
+.brand img{
+    width:45px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right:8px;
+}
+
+.brand{
+    font-family:ubuntu;
+    color:white;
+    display:flex;
+    font-weight:bolder;
+    align-items:center;
+    font-size:1.3rem;
+}
+
+.container{
+    height:62vh;
+    background:black;
+    color:white;
+    font-family:'varela',sans-serif;
+    display:flex;
+    margin:80px auto;
+    width:70%;
+    border-radius:12px;
+    padding:34px;
+    background-image:url("pic1.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    overflow:hidden;
+    overflow-y:scroll;
+    scrollbar-color:grey rgb(12, 9, 9);
+    scrollbar-width:thin;
+}
+
+.bottom{
+    height:10vh;
+    position:fixed;
+    background-color:rgb(12, 9, 9);
+    bottom:0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    flex-direction:column;
+    right:0;
+    width:81.5%;
+}
+
+#myProgressBar{
+   width:60vw;
+   cursor:pointer;
+}
+
+.icons{
+    margin-top:14px;
+}
+
+.icons i{
+    cursor:pointer;
+}
+
+.songitem{
+    height:50px;
+    display:flex;
+    background-color:rgb(185, 185, 185);
+    width:100%;
+    color:black;
+    margin:12px 0;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.songitem img{
+    width:43px;
+    margin:5px 23px;
+    border-radius:2px;
+    
+}
+
+.timestamp{
+   margin-right:23px;
+   margin-left:5px;
+}
+
+.playbutton{
+    margin-left:5px;
+}
+
+.songlistplay{
+    margin:10px 0;
+    margin-right:23px; 
+}
+
+.timestamp i{
+    cursor:pointer;
+}
+
+.songinfo{
+    position:absolute;
+    left:10vw;
+    font-family:'varela',sans-serif;
+}
+
+.songinfo img{
+        opacity:0;
+        transition:opacity 0.4s ease-in; }
+
+.leftcontainer{
+    background-color:rgb(12, 9, 9);
+    color:white;
+    width:14%;
+    height:80vh;
+    font-family:'varela',sans-serif;            
+    float:left;
+    margin-bottom:0;
+    margin-top:0;
+    padding:34px;
+    background-attachment:scroll;
+    overflow:hidden;
+    overflow-y:scroll;
+    scrollbar-color:grey rgb(12, 9, 9);
+    scrollbar-width:thin;
+}
+
+.list{
+    border:1px solid rgb(114, 114, 114);
+    padding-top:20px;
+    text-align:center;
+    width:200px;
+    display:flex;
+    flex-direction:column;
+    height:30px;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+}
+
+.leftcontainer ul{
+    list-style-type:none;
+    margin-top:20px;
+}
+
+p{
+    font-family:'varela',sans-serif; 
+    font-size:1.1rem;
+   color:dimgray;
+}
+
+a{
+    text-decoration:none;
+}
+
+h5{
+    font-family:'varela',sans-serif; 
+    font-size:1.2rem;
+    font-weight:bold;
+    text-align:center;
+}
+
+.justin{
+    color:antiquewhite;
+}
