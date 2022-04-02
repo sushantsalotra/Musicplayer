@@ -352,7 +352,7 @@ nav ul li{
     font-family:'varela',sans-serif;
     padding:20px;
     font-size:1.1rem;
-    
+    font-weight: lighter;
 }
 
 
@@ -378,6 +378,7 @@ nav ul li{
     font-family:'varela',sans-serif;
     padding:20px;
     font-size:1.1rem;
+    font-weight: lighter;
     
 }
 
@@ -400,6 +401,7 @@ nav ul li{
     font-family:'varela',sans-serif;
     padding:20px;
     font-size:1.1rem;
+    font-weight: lighter;
     
 }
 .songbox10{
@@ -423,5 +425,6 @@ nav ul li{
     font-family:'varela',sans-serif;
     padding:20px;
     font-size:1.1rem;
+    font-weight: lighter;
     
 }
