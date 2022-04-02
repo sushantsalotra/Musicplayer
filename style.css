@@ -64,6 +64,7 @@ nav ul li{
 .container{
     background:rgb(22, 21, 21);
     color:white;
+    font-family: Arial, Helvetica, sans-serif;
     height:680px;
     width:70%;
     left:15%;
@@ -78,7 +79,7 @@ nav ul li{
     height:280px;
     left:3.5%;
     top:10px;
-    border-radius:7px;
+    border-radius:10px;
     color:white;
 }
 
@@ -90,7 +91,7 @@ nav ul li{
 }
 
 .main{
-    background:yellow;
+    background:#161515;
     position:relative;
     height:200px;
     top:350px;
@@ -322,7 +323,7 @@ nav ul li{
     border:2px solid white;
 }
 .main2{
-    background:purple;
+    background:rgb(31, 31, 31);
     position:relative;
     height:500px;
     top:350px;
@@ -333,7 +334,7 @@ nav ul li{
 }
 .songbox7{
     height:320px;
-    background:blue;
+    background:rgb(82, 82, 106);
     position:relative;
     width:226px;
     border-radius:7px;
@@ -357,7 +358,7 @@ nav ul li{
 
 .songbox8{
     height:320px;
-    background:blue;
+    background:rgb(82, 82, 106);
     position:relative;
     width:226px;
     border-radius:7px;
@@ -382,20 +383,45 @@ nav ul li{
 
 .songbox9{
     height:320px;
-    background:blue;
+    background:rgb(82, 82, 106);
     position:relative;
     width:226px;
     border-radius:7px;
     top:10px;
 }
-
+.songbox9 img{
+    border-radius:100%;
+    height:65%;
+    position:relative;
+}
+.songbox9 h5{
+    position:absolute;
+    color:white;
+    font-family:'varela',sans-serif;
+    padding:20px;
+    font-size:1.1rem;
+    
+}
 .songbox10{
     height:320px;
-    background:blue;
+    background:rgb(82, 82, 106);;
     position:relative;
     width:226px;
     border-radius:7px;
     top:10px;
     left:23px;
     float:right;
+}
+.songbox10 img{
+    border-radius:100%;
+    height:65%;
+    position:relative;
+}
+.songbox10 h5{
+    position:absolute;
+    color:white;
+    font-family:'varela',sans-serif;
+    padding:20px;
+    font-size:1.1rem;
+    
 }
