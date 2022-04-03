@@ -2,13 +2,13 @@
 
 body{
     background:rgb(29, 29, 29);
-    
     font-family: Arial, Helvetica, sans-serif;
 }
 
 *{
     margin:0;
     padding:0;
+    text-decoration: none;
 }
 
 nav{
@@ -115,35 +115,41 @@ nav ul li{
     border-radius: 7px;
     margin-top: 7px;
 }
+.songbox:hover{
+    background:rgb(73, 72, 72);
+    transition: 0.7s;
+}
 
 .songbox img{
-    border-radius:10px;
-    padding: 7px 7px;
-    width:25%;
-    height:80%;
+    border-radius:7px 0px 0px 7px;
+    width:30%;
+    height:100%;
 }
 
 .songbox h5{
     position:absolute;
-    left:100px;
+    left:110px;
     bottom:30px;
     font-family:'varela',sans-serif;
     color:white;
     font-size:1.1rem;
 }
 
-#masterplay{
+.masterplay{
     position:absolute;
     left:260px;
-    top:20px;
+    top:28px;
     cursor:pointer;
-    color:black;
-    background:white;
-    border-radius:20px;
-    border:2px solid white;
+    color:rgb(67, 209, 67);
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+    visibility: hidden;
 }
-#masterplay:hover{
-    transform: scale(1.1, 1.1);
+.masterplay:hover{
+    transform: scale(1.5, 1.5);
+    color:rgb(97, 206, 97);
+    transition: 0.3s;
 }
 
 
@@ -165,29 +171,45 @@ nav ul li{
     background:rgb(47, 47, 48);
     position:relative;
     width:226px;
-    border-radius:7px;
+    border-radius:10px;
     margin:15px 15px 0px 0px;
     left: 15px;
+    text-align: center;
+}
+.songbox7:hover,
+.songbox8:hover,
+.songbox9:hover,
+.songbox10:hover{
+    background:rgb(59, 59, 60);
+    transition: 0.7s;
 }
 .songbox7 img,
 .songbox8 img,
 .songbox9 img,
 .songbox10 img{
-    border-radius:100%;
+    border-radius:10px;
     height:65%;
     position:relative;
-    margin: 7px 7px;
+    margin: 7px 9px;
 }
 
 .songbox7 h5,
 .songbox8 h5,
 .songbox9 h5,
 .songbox10 h5{
-    position:absolute;
     color:white;
     font-family:'varela',sans-serif;
-    padding:30px 80px;
     font-size:1.5rem;
-    font-weight: lighter;
+    text-align: center;
+    padding-top: 10px;
 }
-
+.songbox7 h6,
+.songbox8 h6,
+.songbox9 h6,
+.songbox10 h6{
+    color:white;
+    font-family:'varela',sans-serif;
+    font-size:1rem;
+    text-align: center;
+    padding-top: 10px;
+}
