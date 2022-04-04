@@ -209,7 +209,8 @@ nav ul li{
 .songbox10 h6{
     color:white;
     font-family:'varela',sans-serif;
-    font-size:1rem;
+    font-size:0.8rem;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 17px;
+    transform: scale(1.1, 1);
 }

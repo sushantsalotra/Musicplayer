@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu&family=Varela+Round&display=swap');
 
 body{
-    background:antiquewhite;
+    background:rgb(29, 29, 29);;
 }
 
 .about{
@@ -16,6 +16,7 @@ body{
 *{
     margin:0;
     padding:0;
+    text-decoration: none;
 }
 
 nav{
@@ -77,7 +78,7 @@ p1{
     display:flex;
     margin:80px auto;
     width:70%;
-    border-radius:12px;
+    border-radius:10px;
     padding:34px;
     background-image:url("pic1.jpg");
     background-size:cover;
@@ -89,7 +90,7 @@ p1{
 }
 
 .bottom{
-    height:10vh;
+    height:15vh;
     position:fixed;
     background-color:rgb(12, 9, 9);
     bottom:0px;
@@ -97,23 +98,64 @@ p1{
     align-items:center;
     justify-content:center;
     color:white;
-    flex-direction:column;
-    right:0;
-    width:81.5%;
+    flex-direction:row;
+    width:100%;
+}
+#time{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    left: 0%;
+    margin-left: 210px;
+}
+#myProgressBar{
+    width:50vw;
+    cursor:pointer;
+    margin-top: 20px;
+    height: 5px;
+}
+#currentTime,
+#totalTime{
+    font-size: 15px;
+    padding: 15px 10px 0px 10px;
 }
 
-#myProgressBar{
-   width:60vw;
-   cursor:pointer;
-}
 
 .icons{
-    margin-top:14px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+#prev,
+#next
+{
+    cursor: pointer;
+    font-size: 35px;
+    padding: 22px 18px;
+}
+#play{
+    cursor: pointer;
+    padding: 10px 0px; 
+    font-size: 55px;
+}
+#shuffle,
+#loop{
+    cursor: pointer;
+    font-size: 25px;
+    padding:28px 10px;
+}
+#shuffle:hover,
+#loop:hover,
+#prev:hover,
+#next:hover,
+#play:hover{
+    transform: scale(1.1, 1.1);
+    opacity: 0.8;
 }
 
-.icons i{
-    cursor:pointer;
-}
+
 
 .songitem{
     height:50px;
@@ -153,67 +195,76 @@ p1{
 }
 
 .songinfo{
-    position:absolute;
-    left:10vw;
+    position: absolute;
+    height: 80px;
+    width: 150px;
+    border: 2px solid white;
+    left:3vw;
     font-family:'varela',sans-serif;
+    border-radius: 10%;
 }
-
-.songinfo img{
-        opacity:0;
-        transition:opacity 0.4s ease-in; }
-
 .leftcontainer{
     background-color:rgb(12, 9, 9);
     color:white;
     width:14%;
-    height:80vh;
+    height:62vh;
+    display: flex;
+    flex-direction: column;
     font-family:'varela',sans-serif;            
     float:left;
-    margin-bottom:0;
-    margin-top:0;
+    margin: 0px 5px 0px 30px;
     padding:34px;
-    background-attachment:scroll;
-    overflow:hidden;
-    overflow-y:scroll;
-    scrollbar-color:grey rgb(12, 9, 9);
-    scrollbar-width:thin;
+    border-radius: 10px;
+}
+.songbox{
+    height:70px;
+    background:rgb(48, 48, 48);
+    position:relative;
+    width:210px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.songbox:hover{
+    background:rgb(73, 72, 72);
+    transition: 0.7s;
 }
 
-.list{
-    border:1px solid rgb(114, 114, 114);
-    padding-top:20px;
-    text-align:center;
-    width:200px;
-    display:flex;
-    flex-direction:column;
-    height:30px;
-    border-top:0;
-    border-left:0;
-    border-right:0;
+.songbox img{
+    border-radius:7px 0px 0px 7px;
+    width:30%;
+    height:100%;
 }
 
-.leftcontainer ul{
-    list-style-type:none;
-    margin-top:20px;
+.songbox h5{
+    position:absolute;
+    left:70px;
+    bottom:22px;
+    font-family:'varela',sans-serif;
+    color:white;
+    font-size:0.9rem;
 }
 
+.masterplay{
+    position:absolute;
+    left:170px;
+    top:15px;
+    cursor:pointer;
+    color:rgb(67, 209, 67);
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+    visibility: hidden;
+}
+.masterplay:hover{
+    transform: scale(1.1, 1.1);
+    color:rgb(97, 206, 97);
+    transition: 0.3s;
+}
 p{
-    font-family:'varela',sans-serif; 
-    font-size:1.1rem;
-   color:dimgray;
-}
-
-a{
-    text-decoration:none;
-}
-
-h5{
     font-family:'varela',sans-serif; 
     font-size:1.2rem;
     font-weight:bold;
     text-align:center;
+    margin-bottom: 4px;
 }
 
-.justin{
-    color:antiquewhite;
-}
