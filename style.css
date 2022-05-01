@@ -3,6 +3,9 @@
 body{
     background:rgb(29, 29, 29);
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/220771-black-music-wallpaper-music-notes-with-black-background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 *{
@@ -25,31 +28,25 @@ nav ul{
     list-style-type:none;
     height:55px;
     color:white;
+    list-style: none;
 }
 
 nav ul li{
     padding:0 12px;
 }
-
+nav ul li a{
+    color: white;
+}
+nav ul li a:hover{
+    color:dimgray;
+}
 .home{
     padding-left: 70px;
-    color:white;
-    cursor:pointer;
 }
-
-.about{
-    color:dimgray;
-    cursor:pointer;
-}
-
-.about:hover{
-    color:white;
-}
-
 .brand img{
     width:45px;
     text-align: center;
-    padding-left: 10px;
+    padding-left: 0px;
     padding-right:8px;
 }
 
@@ -65,18 +62,20 @@ nav ul li{
 .container{
     background:rgb(22, 21, 21);
     color:white;
-    height:680px;
+    height:690px;
     width:70%;
     left:15%;
     position:relative;
     overflow:hidden;
     overflow-y:scroll;
 }
-
+.container::-webkit-scrollbar{
+    visibility: hidden;
+}
 .theimg{
     width:95%;
     height:300px;
-    margin: 10px 15px;
+    margin: 10px 34px;
     background-color:white;
     background-image: url(img/headerphoto.jpg);
     background-size: cover;
@@ -91,12 +90,21 @@ nav ul li{
     line-height: 60px;
     text-shadow: 10px 10px 5px rgba(255, 255, 255, 0.145);
 }
+.theimg p:hover{
+    opacity: 0.8;
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.145);
+    transition: 0.4s all linear;
+}
+.theimg p:not(:hover){
+    opacity: 1;
+    text-shadow: 10px 10px 5px rgba(255, 255, 255, 0.145);
+    transition: 0.4s all linear;
+}
 .container h1{
     position:relative;
     padding:35px;
     color:white;
 }
-
 .main{
     background:#161515;
     position:relative;
@@ -119,7 +127,10 @@ nav ul li{
     background:rgb(73, 72, 72);
     transition: 0.7s;
 }
-
+.songbox:not(:hover){
+    background:rgb(48, 48, 48);
+    transition: 0.7s;
+}
 .songbox img{
     border-radius:7px 0px 0px 7px;
     width:30%;
@@ -151,7 +162,11 @@ nav ul li{
     color:rgb(97, 206, 97);
     transition: 0.3s;
 }
-
+.masterplay:not(:hover){
+    transform: scale(1, 1);
+    color:rgb(67, 209, 67);
+    transition: 0.3s;
+}
 
 .main2{
     background: #161515;
@@ -181,6 +196,13 @@ nav ul li{
 .songbox9:hover,
 .songbox10:hover{
     background:rgb(59, 59, 60);
+    transition: 0.7s;
+}
+.songbox7:not(:hover),
+.songbox8:not(:hover),
+.songbox9:not(:hover),
+.songbox10:not(:hover){
+    background:rgb(47, 47, 48);
     transition: 0.7s;
 }
 .songbox7 img,
@@ -213,4 +235,34 @@ nav ul li{
     text-align: center;
     padding-top: 17px;
     transform: scale(1.1, 1);
+}
+.aboutus{
+    padding: 50px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    text-align: center;
+}
+.aboutus h1{
+    font-style: normal;
+}
+.copy{
+    padding-top: 30px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.682);
+}
+.copyp{
+    padding-top: 20px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.682);
+    padding-bottom: 20px;
 }
