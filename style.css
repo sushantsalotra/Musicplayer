@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu&family=Varela+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 body{
     background:rgb(29, 29, 29);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
     background-image: url(img/220771-black-music-wallpaper-music-notes-with-black-background.jpg);
     background-size: cover;
     background-position: center;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -47,6 +48,7 @@ nav ul li a:hover{
     width:45px;
     text-align: center;
     padding-left: 0px;
+    border-radius: 50%;
     padding-right:8px;
 }
 
@@ -71,13 +73,15 @@ nav ul li a:hover{
 }
 .container::-webkit-scrollbar{
     visibility: hidden;
+    width: 0px;
 }
 .theimg{
     width:95%;
     height:300px;
-    margin: 10px 34px;
+    margin: 10px 28px;
     background-color:white;
     background-image: url(img/headerphoto.jpg);
+    font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
     border-radius: 10px;
     background-position: center;
@@ -244,6 +248,8 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     font-style: italic;
+    
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 .aboutus h1{
@@ -253,6 +259,7 @@ nav ul li a:hover{
     padding-top: 30px;
     font-size: 12px;
     font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     text-align: center;
     color: rgba(255, 255, 255, 0.682);
@@ -265,4 +272,5 @@ nav ul li a:hover{
     text-align: center;
     color: rgba(255, 255, 255, 0.682);
     padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
