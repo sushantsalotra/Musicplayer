@@ -324,6 +324,8 @@ nav ul li a:hover{
     border-radius:10px;
     background-image: linear-gradient(180deg, rgba(64, 224, 208, 0.401), rgb(21, 21, 21));
     overflow-y: scroll;
+    
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 .container::-webkit-scrollbar{
