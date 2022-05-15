@@ -20,18 +20,22 @@ nav{
     right:0;
     top:0;
     left:0;
-    position:fixed;
-
+    position: fixed;
+    z-index: 10;
 }
+
 nav ul{
     display:flex;
     align-items:center;
     list-style-type:none;
-    height:55px;
+    height:100px;
     color:white;
+    list-style: none;
 }
+
 nav ul li{
-    padding:0 12px;
+    font-size: 35px;
+    padding:0 17px;
 }
 nav ul li a{
     color: white;
@@ -40,13 +44,14 @@ nav ul li a:hover{
     color:dimgray;
 }
 .home{
-    padding-left: 70px;
+    padding-left: 35%;
 }
 .brand img{
-    width:45px;
+    height: 60px;
+    width: 60px;
     text-align: center;
+    padding-left: 0px;
     border-radius: 50%;
-    padding-right:8px;
 }
 
 .brand{
@@ -55,9 +60,35 @@ nav ul li a:hover{
     display:flex;
     font-weight:bolder;
     align-items:center;
-    font-size:1.3rem;
+    font-size:2.5rem;
 }
 
+@media only screen and (min-width:1000px){
+    nav ul{
+        height:55px;
+    }
+    
+    nav ul li{
+        font-size: 16px;
+        padding:0 12px;
+    }
+    .home{
+        padding-left: 70px;
+    }
+    .brand img{
+        height: 45px;
+        width:45px;
+        padding-left: 0px;
+    }
+    .brand{
+        font-family:ubuntu;
+        color:white;
+        display:flex;
+        font-weight:bolder;
+        align-items:center;
+        font-size:1.3rem;
+    }
+}
 .leftcontainer{
     background-image: linear-gradient(180deg, rgba(64, 224, 208, 0.401), rgb(21, 21, 21));
     color:white;
