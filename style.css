@@ -19,7 +19,6 @@ body{
     width: 90px;
     color: white;
     font-size: 70px;
-    position: absolute;
     margin-left: 1%;
     background-color:#161515;
     z-index: 100;
@@ -175,9 +174,9 @@ nav ul li a:hover{
 
 .container{
     background:rgb(22, 21, 21);
-    padding-top: 100px;
+    padding-top: 10px;
     color:white;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 10px);
     width:100%;
     left:0;
     position:relative;
