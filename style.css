@@ -14,7 +14,73 @@ body{
     padding:0;
     text-decoration: none;
 }
-
+.menu{
+    height: 90px;
+    width: 90px;
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    margin-left: 1%;
+    background-color:#161515;
+    z-index: 100;
+    border-radius: 10px;
+    top: 10px;
+}
+#menu{
+    padding-left: 15px;
+}
+.sidenav{
+    height: 105vh;
+    width: 0%;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+#close{
+    color: white;
+    margin-top: 10px;
+    margin-left: 90%;
+    font-size: 80px;
+    visibility: hidden;
+    height: 20px;
+    width: 20px;
+}
+.sidenav img{
+    height: 200px;
+    width: 210px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+.sidebrand{
+    font-size:70px;
+    font-family: poppins;
+    padding-left: 40px;
+    padding-top: 90px;
+    position: absolute;
+    visibility: hidden;
+}
+.sidebrand a{
+    color: white;
+}
+.sidenav ul{
+    display:flex;
+    align-items:center;
+    padding-top: 80px;
+    mask-origin: fill-box;
+    font-size: 50px;
+    list-style-type:none;
+    flex-direction: column;
+    line-height: 120px;
+    height:100px;
+    list-style: none;
+    visibility: hidden;
+}
+.sidenav ul li a{
+    color: white;
+}
 nav{
     font-family:ubuntu;
     background-color:rgb(12, 9, 9);
@@ -23,6 +89,7 @@ nav{
     left:0;
     position: fixed;
     z-index: 10;
+    visibility: hidden;
 }
 
 nav ul{
@@ -65,6 +132,21 @@ nav ul li a:hover{
 }
 
 @media only screen and (min-width:1000px){
+    .sidenav{
+        height: 105vh;
+        width: 80%;
+        position: fixed;
+        z-index: 1000;
+        margin-left: 20%;
+        background-color: rgb(0, 0, 0);
+        visibility: hidden;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    nav{
+        visibility: visible;
+    }
     nav ul{
         height:55px;
     }
@@ -107,6 +189,9 @@ nav ul li a:hover{
     visibility: hidden;
     width: 0px;
 }
+
+
+
 .theimg{
     width:95%;
     height:300px;
@@ -297,13 +382,13 @@ nav ul li a:hover{
     color: rgba(255, 255, 255, 0.682);
 }
 .copyp{
-    padding-top: 20px;
-    font-size: 12px;
+    padding-top: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 100;
     text-align: center;
     color: rgba(255, 255, 255, 0.682);
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -393,5 +478,24 @@ nav ul li a:hover{
         font-style: italic;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
+    }
+    .copy{
+        padding-top: 30px;
+        font-size: 12px;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.682);
+    }
+    .copyp{
+        padding-top: 20px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 100;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.682);
+        padding-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
