@@ -8,8 +8,6 @@ let sideUl = document.querySelector('#sidenavlist')
 let logo = document.querySelector("#logo");
 let sideBrand = document.querySelector(".sidebrand");
 
-
-
 /*document.querySelectorAll(".songbox").forEach(songboxTile => {
         songboxTile.addEventListener("mouseover", (event) => {
                 // event.target.querySelector('.masterplay').children[2].children[0].style.visibility = "visible";
