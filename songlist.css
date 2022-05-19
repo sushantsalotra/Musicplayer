@@ -190,7 +190,6 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 .leftcontainer::-webkit-scrollbar{
     width: 0px;
